@@ -36,28 +36,28 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetUtils.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetEndPoint.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetThread.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetDataWriter.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetPacket.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\ReliableChannel.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetManager.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetDataReader.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NatPunchModule.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\INetEventListener.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetPacketPool.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetPeerCollection.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetSerializer.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\SimpleChannel.cs" />
      <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NtpSyncModule.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\INetEventListener.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\SimpleChannel.cs" />
      <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\FastBitConverter.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\SequencedChannel.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetEndPoint.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetSerializer.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetDataWriter.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\ReliableChannel.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetSocket.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetPacket.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NatPunchModule.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetDataReader.cs" />
      <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetPeer.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetConstants.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetThread.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\SequencedChannel.cs" />
      <Compile Include="Assets\ConsolePro\Remote\ConsoleProRemoteServer.cs" />
      <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetDebug.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetConstants.cs" />
-     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetSocket.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetManager.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetPeerCollection.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetUtils.cs" />
+     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\NetPacketPool.cs" />
      <None Include="Assets\ConsolePro\Remote\ConsoleProRemote.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Software/Unity/2021.1.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -296,20 +296,17 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>D:/Software/Unity/2021.1.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="DemiLib">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
+    </Reference>
     <Reference Include="YamlDotNet">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Editor/VisualScripting.Core/Dependencies/YamlDotNet/YamlDotNet.dll</HintPath>
     </Reference>
-    <Reference Include="IonicZip">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Editor/VisualScripting.Core/Dependencies/DotNetZip/IonicZip.dll</HintPath>
+    <Reference Include="Sirenix.OdinInspector.Editor">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="MiscUtil">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Core/Dependencies/MiscUtil/MiscUtil.dll</HintPath>
-    </Reference>
-    <Reference Include="Antlr3.Runtime">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="DemiLib">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
+    <Reference Include="ConsolePro.Editor">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/ConsolePro/Editor/ConsolePro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="DOTweenProEditor">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
@@ -320,32 +317,38 @@
     <Reference Include="DemiEditor">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll</HintPath>
     </Reference>
-    <Reference Include="DOTween">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenPro">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Editor">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Sirenix.OdinInspector.Attributes">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Serialization.Config">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
     </Reference>
+    <Reference Include="IonicZip">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Editor/VisualScripting.Core/Dependencies/DotNetZip/IonicZip.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+    </Reference>
     <Reference Include="Sirenix.Utilities">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="MiscUtil">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Core/Dependencies/MiscUtil/MiscUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="clipper_library">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.cinemachine@2.7.3/Runtime/ThirdParty/clipper_library.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Serialization">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="DOTweenPro">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+    </Reference>
     <Reference Include="Sirenix.Utilities.Editor">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="ConsolePro.Editor">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/ConsolePro/Editor/ConsolePro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>D:/Software/Unity/2021.1.4f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
