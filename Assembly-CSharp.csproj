@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Software/Unity/2021.1.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -269,11 +270,8 @@
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>D:/Software/Unity/2021.1.4f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="DemiLib">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Editor">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
+    <Reference Include="Sirenix.Serialization">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.OdinInspector.Attributes">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
@@ -284,26 +282,29 @@
     <Reference Include="DOTween">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
-    <Reference Include="Sirenix.Utilities">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
-    </Reference>
     <Reference Include="MiscUtil">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Core/Dependencies/MiscUtil/MiscUtil.dll</HintPath>
     </Reference>
     <Reference Include="clipper_library">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.cinemachine@2.7.3/Runtime/ThirdParty/clipper_library.dll</HintPath>
     </Reference>
-    <Reference Include="Antlr3.Runtime">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Serialization">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
-    </Reference>
     <Reference Include="DOTweenPro">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Utilities.Editor">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Editor">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>D:/Software/Unity/2021.1.4f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -743,11 +744,11 @@
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
@@ -768,29 +769,21 @@
       <Project>{b7ac78ac-a8e9-a4d6-72da-85462dd129be}</Project>
       <Name>Sirenix.OdinInspector.CompatibilityLayer.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityMathematics.csproj">
-      <Project>{09567442-4cee-9b4b-c4c9-f469170e1d37}</Project>
-      <Name>Sirenix.OdinInspector.Modules.UnityMathematics</Name>
-    </ProjectReference>
-    <ProjectReference Include="ConsoleProRemote.csproj">
-      <Project>{4290f4ed-96be-bed5-8f89-e9f058dda412}</Project>
-      <Name>ConsoleProRemote</Name>
-    </ProjectReference>
-    <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
-      <Project>{fc333a09-ba1f-04c4-6515-5758466a7b08}</Project>
-      <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="ConsoleProDebug.csproj">
-      <Project>{f0c003a9-b9ce-f215-6855-74b59caa03a7}</Project>
-      <Name>ConsoleProDebug</Name>
-    </ProjectReference>
     <ProjectReference Include="FMODUnityResonanceEditor.csproj">
       <Project>{f7ef05a9-9380-50ce-fb0b-570ca7c762fd}</Project>
       <Name>FMODUnityResonanceEditor</Name>
     </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityMathematics.csproj">
+      <Project>{09567442-4cee-9b4b-c4c9-f469170e1d37}</Project>
+      <Name>Sirenix.OdinInspector.Modules.UnityMathematics</Name>
+    </ProjectReference>
     <ProjectReference Include="FMODUnity.csproj">
       <Project>{3391518d-2c2b-7658-5379-96e8f9f300e2}</Project>
       <Name>FMODUnity</Name>
+    </ProjectReference>
+    <ProjectReference Include="ConsoleProRemote.csproj">
+      <Project>{4290f4ed-96be-bed5-8f89-e9f058dda412}</Project>
+      <Name>ConsoleProRemote</Name>
     </ProjectReference>
     <ProjectReference Include="FMODUnityEditor.csproj">
       <Project>{1ae01b57-5b68-6949-5e88-d4bdf3f02536}</Project>
@@ -799,6 +792,14 @@
     <ProjectReference Include="FMODUnityResonance.csproj">
       <Project>{1c87d5d2-819a-de63-e5c0-1e424601de22}</Project>
       <Name>FMODUnityResonance</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
+      <Project>{fc333a09-ba1f-04c4-6515-5758466a7b08}</Project>
+      <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="ConsoleProDebug.csproj">
+      <Project>{f0c003a9-b9ce-f215-6855-74b59caa03a7}</Project>
+      <Name>ConsoleProDebug</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

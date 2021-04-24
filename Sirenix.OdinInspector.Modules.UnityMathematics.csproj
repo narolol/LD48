@@ -276,23 +276,14 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>D:/Software/Unity/2021.1.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="DemiLib">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
-    </Reference>
-    <Reference Include="YamlDotNet">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Editor/VisualScripting.Core/Dependencies/YamlDotNet/YamlDotNet.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Editor">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
+    <Reference Include="Sirenix.Serialization">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="ConsolePro.Editor">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/ConsolePro/Editor/ConsolePro.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="DOTweenProEditor">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenEditor">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+    <Reference Include="IonicZip">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Editor/VisualScripting.Core/Dependencies/DotNetZip/IonicZip.dll</HintPath>
     </Reference>
     <Reference Include="DemiEditor">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll</HintPath>
@@ -303,14 +294,8 @@
     <Reference Include="Sirenix.Serialization.Config">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
     </Reference>
-    <Reference Include="IonicZip">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Editor/VisualScripting.Core/Dependencies/DotNetZip/IonicZip.dll</HintPath>
-    </Reference>
     <Reference Include="DOTween">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Utilities">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="MiscUtil">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Core/Dependencies/MiscUtil/MiscUtil.dll</HintPath>
@@ -318,17 +303,32 @@
     <Reference Include="clipper_library">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.cinemachine@2.7.3/Runtime/ThirdParty/clipper_library.dll</HintPath>
     </Reference>
-    <Reference Include="Antlr3.Runtime">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Serialization">
-        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
-    </Reference>
     <Reference Include="DOTweenPro">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Utilities.Editor">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="YamlDotNet">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Editor/VisualScripting.Core/Dependencies/YamlDotNet/YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Editor">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenProEditor">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenEditor">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+        <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>D:/Software/Unity/Unity Projects/LD48/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
