@@ -70,6 +70,11 @@ public class PlayerController : MonoBehaviour
         {
             AddJumpForce();
         }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Fire();
+        }
         
 
 
@@ -101,6 +106,13 @@ public class PlayerController : MonoBehaviour
 
     void Fire()
     {
-        
+        Vector3 shootDirection =  projectileDestination.position - projectileSource.position;
+
+        GameObject go = Instantiate(projectilePrefab, projectileSource.position, Quaternion.identity);
+
+        go.GetComponent<ProjectileBehavior>().Init(shootDirection);
+
     }
+
+    
 }

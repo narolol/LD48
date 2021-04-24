@@ -39,6 +39,9 @@
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\ProjectileBehavior.cs" />
+     <Compile Include="Assets\Scripts\GenericTileBehavior.cs" />
+     <Compile Include="Assets\Scripts\WorkerBehavior.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Software/Unity/2021.1.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
