@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{c5dbb08b-e86b-c1a3-eba0-3910e66f3bae}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{50750062-72c4-b6fe-3f66-a1e03e722e4d}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnity", "FMODUnity.csproj", "{3391518d-2c2b-7658-5379-96e8f9f300e2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleProRemote", "ConsoleProRemote.csproj", "{4290f4ed-96be-bed5-8f89-e9f058dda412}"
@@ -10,8 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirenix.OdinInspector.CompatibilityLayer", "Sirenix.OdinInspector.CompatibilityLayer.csproj", "{fc333a09-ba1f-04c4-6515-5758466a7b08}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleProDebug", "ConsoleProDebug.csproj", "{f0c003a9-b9ce-f215-6855-74b59caa03a7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{50750062-72c4-b6fe-3f66-a1e03e722e4d}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnityResonance", "FMODUnityResonance.csproj", "{1c87d5d2-819a-de63-e5c0-1e424601de22}"
 EndProject
@@ -34,6 +34,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{c5dbb08b-e86b-c1a3-eba0-3910e66f3bae}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{c5dbb08b-e86b-c1a3-eba0-3910e66f3bae}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50750062-72c4-b6fe-3f66-a1e03e722e4d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50750062-72c4-b6fe-3f66-a1e03e722e4d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3391518d-2c2b-7658-5379-96e8f9f300e2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3391518d-2c2b-7658-5379-96e8f9f300e2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4290f4ed-96be-bed5-8f89-e9f058dda412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,8 +44,6 @@ Global
 		{fc333a09-ba1f-04c4-6515-5758466a7b08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{f0c003a9-b9ce-f215-6855-74b59caa03a7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{f0c003a9-b9ce-f215-6855-74b59caa03a7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50750062-72c4-b6fe-3f66-a1e03e722e4d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{50750062-72c4-b6fe-3f66-a1e03e722e4d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1c87d5d2-819a-de63-e5c0-1e424601de22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1c87d5d2-819a-de63-e5c0-1e424601de22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1ae01b57-5b68-6949-5e88-d4bdf3f02536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

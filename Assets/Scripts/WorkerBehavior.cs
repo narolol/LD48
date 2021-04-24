@@ -8,6 +8,11 @@ public class WorkerBehavior : MonoBehaviour
 
     public float stepMultiplier;
     public float maxSpeed;
+    public float damage;
+    public float atkSpd;
+    private float timeSinceAtk;
+    
+    private GameObject _workerTarget;
 
     private Rigidbody rb;
 
@@ -36,10 +41,12 @@ public class WorkerBehavior : MonoBehaviour
         }
 
         state = WorkerState.Seeking;
+
+        timeSinceAtk = 0f;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {   
         switch (state)
         {
@@ -50,6 +57,21 @@ public class WorkerBehavior : MonoBehaviour
             case WorkerState.Seeking:
 
                 AddMovementForce();
+                timeSinceAtk = 0f;
+
+            break;
+
+            case WorkerState.Attacking:
+                //
+                timeSinceAtk += Time.deltaTime;
+
+                if (timeSinceAtk >= atkSpd)
+                {
+                    Attack();
+                    print("ataquei");
+                    timeSinceAtk = 0f;
+                }
+
 
             break;
 
@@ -57,17 +79,14 @@ public class WorkerBehavior : MonoBehaviour
             default:
             break;
         }     
-        
-        
-    }
 
-    void FixedUpdate() 
-    {
         if (rb.velocity.magnitude > maxSpeed)
         {
             rb.velocity = rb.velocity.normalized * maxSpeed;
-        }    
+        } 
+        
     }
+
 
     void AddMovementForce()
     {
@@ -80,16 +99,24 @@ public class WorkerBehavior : MonoBehaviour
         if (other.gameObject.tag == "Tiles")
         {
             state = WorkerState.Attacking;
-            print("state ATK");
+            print("ATK tile");
+            _workerTarget = other.gameObject;
+            Attack();
+            
         }
+
+        if (other.gameObject.tag == "Enemy")
+        {
+            state = WorkerState.Attacking;
+            print("ATK Enemy");
+            _workerTarget = other.gameObject;
+        }
+
+        
     }
 
     private void OnTriggerStay(Collider other) 
     {
-        if (other.gameObject.tag == "Tiles")
-        {
-            print("stay");
-        }
     }
     
 
@@ -99,6 +126,25 @@ public class WorkerBehavior : MonoBehaviour
         {
             state = WorkerState.Seeking;
             print("state SEEK");
+            
+        }
+
+        if (other.gameObject.tag == "Enemy")
+        {
+
+        }
+    }
+
+    public void Attack()
+    {
+        if (_workerTarget.tag == "Tiles")
+        {
+            _workerTarget.GetComponentInParent<GenericTileBehavior>().TakeDamage(damage);
+        }
+
+        if (_workerTarget.tag == "Enemy")
+        {
+
         }
     }
 }

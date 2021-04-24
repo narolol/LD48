@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Tiles
   - Enemy
+  - Bones
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - ClickPlane
   - Water
   - UI
   - Player
@@ -18,7 +19,7 @@ TagManager:
   - Enemy
   - Tiles
   - Projectile
-  - 
+  - Items
   - 
   - 
   - 
