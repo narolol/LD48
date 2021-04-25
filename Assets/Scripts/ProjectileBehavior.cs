@@ -29,9 +29,14 @@ public class ProjectileBehavior : MonoBehaviour
     {
         if (other.gameObject.tag == "Tiles")
         {
-            other.gameObject.GetComponentInParent<GenericTileBehavior>().TakeDamage(1f);
-            print("DMG !!!!");
-            Destroy(this.gameObject);
+          other.gameObject.GetComponentInParent<GenericTileBehavior>().TakeDamage(1f);
+          print("DMG !!!!");            
+          Destroy(this.gameObject);
+        }
+
+        if (other.gameObject.tag == "Ground")
+        {
+          Destroy(this.gameObject);
         }
     }
 }

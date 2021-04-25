@@ -11,6 +11,10 @@ public class WorkerBehavior : MonoBehaviour
     public float damage;
     public float atkSpd;
     private float timeSinceAtk;
+
+    private bool hasTurnedRecently;
+    public float turnCooldown;
+    private float turnTimeElapsed;
     
     private GameObject _workerTarget;
 
@@ -28,12 +32,13 @@ public class WorkerBehavior : MonoBehaviour
     void Start()
     {
         state = WorkerState.Idle;
-
+        turnTimeElapsed = 0f;
         rb = GetComponentInChildren<Rigidbody>();        
 
         if (Random.value >= 0.5f)
         {
             movementVector = new Vector3(1,0,0);
+            transform.Rotate(new Vector3(0, 180,0));
         }
         else
         {
@@ -45,8 +50,16 @@ public class WorkerBehavior : MonoBehaviour
         timeSinceAtk = 0f;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+private void Update() 
+{
+  turnTimeElapsed += Time.deltaTime;
+  
+  if (turnTimeElapsed >= turnCooldown)
+  {
+    hasTurnedRecently = false;
+  }
+}    
+void FixedUpdate()
     {   
         switch (state)
         {
@@ -112,6 +125,13 @@ public class WorkerBehavior : MonoBehaviour
             _workerTarget = other.gameObject;
         }
 
+        if (other.gameObject.tag == "Wall")
+      {
+        movementVector = new Vector3(movementVector.x * -1, 0, 0); 
+        rb.AddForce(new Vector3(movementVector.x * 5f, 0, 0), ForceMode.VelocityChange);
+        transform.Rotate(new Vector3(0, 180,0));
+      }
+
         
     }
 
@@ -146,5 +166,16 @@ public class WorkerBehavior : MonoBehaviour
         {
 
         }
+    }
+
+    private void OnCollisionEnter(Collision other) {
+      if (other.gameObject.tag == "Wall" && !hasTurnedRecently)
+      {
+        movementVector = new Vector3(movementVector.x * -1, 0, 0); 
+        rb.AddForce(new Vector3(movementVector.x * 5f, 0, 0), ForceMode.VelocityChange);
+        transform.Rotate(new Vector3(0, 180,0));
+        hasTurnedRecently = true;
+      }
+
     }
 }

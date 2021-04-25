@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5735526494688915480}
   - component: {fileID: 7279600032534183609}
   - component: {fileID: -3299373201016222095}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4903,7 +4903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 909ae9edf21818444b963780e677f3c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMultiplyer: 0.2
+  speedMultiplyer: 0.1
 --- !u!96 &-3299373201016222095
 TrailRenderer:
   serializedVersion: 2
@@ -4954,16 +4954,16 @@ TrailRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.0065345764
-        value: 0.5037594
-        inSlope: -2.7800262
-        outSlope: -2.7800262
+        time: 0
+        value: 0.36090302
+        inSlope: -0.34267026
+        outSlope: -0.34267026
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.08135724
+        outWeight: 0.15824915
       - serializedVersion: 3
-        time: 0.97058827
+        time: 0.80719715
         value: 0
         inSlope: 0
         outSlope: 0
@@ -5003,10 +5003,10 @@ TrailRenderer:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    numCornerVertices: 0
+    numCornerVertices: 6
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.2

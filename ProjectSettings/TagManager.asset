@@ -7,6 +7,8 @@ TagManager:
   - Tiles
   - Enemy
   - Bones
+  - Ground
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - Tiles
   - Projectile
   - Items
-  - 
+  - LevelTrigger
   - 
   - 
   - 

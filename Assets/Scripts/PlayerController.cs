@@ -44,7 +44,18 @@ public class PlayerController : MonoBehaviour
   public int goldAmount;
   public TMPro.TextMeshPro goldUI;
 
-  Plane _plane;
+  public bool canTeleport;
+  public bool canRaiseUndead;
+  public bool canControl;
+
+  public float jumpCooldown;
+  private float _timeSinceLastJump;
+  public bool canRefreshJump;
+
+  public List<GameObject> zombies;
+
+  public GameObject deathCamera;
+  public GameObject UICamera;
 
 
 
@@ -53,15 +64,53 @@ public class PlayerController : MonoBehaviour
   {
     rb =  GetComponent<Rigidbody>();        
     timeSinceManaTick = 0f;
+    
+    canControl = true; 
+    _timeSinceLastJump = jumpCooldown;
+    canRefreshJump = true;
 
   }
 
   void Update() 
   {
-    GetMovementVectorFromInput();
-    GetProjectileDestination();
-    UpdateStatus();
-    UpdateUI();
+    if (canControl)
+    {
+      if (currentHealth <= 0 )
+      {
+        Die();
+        return;
+      }
+
+
+      GetMovementVectorFromInput();
+      GetProjectileDestination();
+      UpdateStatus();
+      UpdateUI();
+
+      if (canRefreshJump)
+      {
+        _timeSinceLastJump += Time.deltaTime;
+      }
+
+      if (_timeSinceLastJump >= jumpCooldown)
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            AddJumpForce();
+            _timeSinceLastJump = 0f;
+        }
+      }
+
+      if (Input.GetMouseButtonDown(0))
+      {
+          Fire();
+      }
+
+      if (Input.GetMouseButtonDown(1))
+      {
+        RaiseUndead();
+      }
+    }
   }
   void FixedUpdate()
   { 
@@ -108,21 +157,7 @@ public class PlayerController : MonoBehaviour
         isHoldingLeft = false;
     }
 
-    if (Input.GetKeyDown(KeyCode.Space))
-    {
-        AddJumpForce();
-    }
-
-    if (Input.GetMouseButtonDown(0))
-    {
-        Fire();
-    }
-
-    if (Input.GetMouseButtonDown(1))
-    {
-      RaiseUndead();
-      // print("click");
-    }
+    
     
 
 
@@ -178,14 +213,43 @@ public class PlayerController : MonoBehaviour
           if (col.gameObject.tag == "Bones")
           {
             Vector3 zombieSpawnPosition = new Vector3(col.transform.position.x, col.transform.position.y + 0.5f, 5);
-            Instantiate(undeadPrefab, zombieSpawnPosition, Quaternion.identity);
-            Destroy(col.gameObject);
+            zombies.Add(Instantiate(undeadPrefab, zombieSpawnPosition, Quaternion.identity));
+            Destroy(col.gameObject);            
             // print("RISE FROM YOUR GRAVE");
+            currentMana -= raiseUndeadManaCost;
             break;
           }
       }
     }
   }
+
+  public void TakeDamage(float f)
+  {
+    currentHealth -= f;
+  }
+  public void Die()
+  {
+    canControl = false;
+    foreach (GameObject z in zombies)
+    {
+        Destroy(z.gameObject);
+    }
+    movementVector = Vector3.zero;
+
+    deathCamera.SetActive(true);
+    UICamera.SetActive(false);
+
+  }
+
+  public void Teleport()
+  {
+    foreach (GameObject z in zombies)
+    {
+      z.transform.position = transform.position;
+    }
+  }
+
+  
 
   void UpdateUI()
   {

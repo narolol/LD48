@@ -8,6 +8,7 @@ public class GenericTileBehavior : MonoBehaviour
 
   public float HP;
   public GameObject lootPrefab;
+  public int lootMultiplier;
    
 
 
@@ -34,11 +35,22 @@ public class GenericTileBehavior : MonoBehaviour
     
     if (lootPrefab != null)
     {  
-      GameObject _loot = Instantiate(lootPrefab, transform.position, Quaternion.identity);
-      _loot.GetComponent<Rigidbody>().AddForce(new Vector3(16f * (Random.value + 0.2f), 33f * (Random.value +1f), 0));
-      _loot.GetComponent<Rigidbody>().AddTorque(new Vector3(16f * (Random.value + 0.2f), 33f * (Random.value + 0.2f), 16f * (Random.value + 0.2f)));
+      for (int i = 0; i < lootMultiplier; i++)
+      {
+        GameObject _loot = Instantiate(lootPrefab, transform.position, Quaternion.identity);
+        _loot.GetComponent<Rigidbody>().AddForce(new Vector3(16f * (Random.value + 0.2f), 33f * (Random.value +1f), 0));
+        _loot.GetComponent<Rigidbody>().AddTorque(new Vector3(16f * (Random.value + 0.2f), 33f * (Random.value + 0.2f), 16f * (Random.value + 0.2f)));          
+      }
     }
     transform.position = new Vector3(0,-1000,0);
+  }
+
+  private void OnCollisionEnter(Collision other) 
+  {
+    if (other.gameObject.tag == "Player") 
+    {
+      //other.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.down * 100f, ForceMode.Impulse);
+    }
   }
     
 }
