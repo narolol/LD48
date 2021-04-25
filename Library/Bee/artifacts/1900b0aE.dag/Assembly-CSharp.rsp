@@ -361,6 +361,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/GenericTileBehavior.cs"
+"Assets/Scripts/GoldBehavior.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/ProjectileBehavior.cs"
 "Assets/Scripts/SimpleCameraController.cs"

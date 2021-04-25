@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
   public float regenTickTimer;
   private float timeSinceManaTick;
   public float shootManaCost;
+  
+  [Space(5)]
   public float raiseUndeadManaCost;
   public float raiseUndeadRange;
   public GameObject undeadPrefab;
@@ -38,6 +40,9 @@ public class PlayerController : MonoBehaviour
   [SerializeField]
   private float uiBarSize;
   
+  [Space(5)]
+  public int goldAmount;
+  public TMPro.TextMeshPro goldUI;
 
   Plane _plane;
 
@@ -186,6 +191,7 @@ public class PlayerController : MonoBehaviour
   {
     HealthBar.transform.localScale = new Vector3(HealthBar.transform.localScale.x, (currentHealth/maxHealth) * uiBarSize, 0);
     manaBar.transform.localScale = new Vector3(manaBar.transform.localScale.x, (currentMana/maxMana) * uiBarSize, 0);
+    goldUI.text = "Gold: " + goldAmount.ToString();
   }
 
   
