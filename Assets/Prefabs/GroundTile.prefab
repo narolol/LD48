@@ -47,6 +47,7 @@ MonoBehaviour:
   HP: 3
   lootPrefab: {fileID: 1693042214251648019, guid: aec4720fb921da54a8c3bde4b64be98b, type: 3}
   lootMultiplier: 1
+  breakEvent: event:/breakTile
 --- !u!1 &3476561452604799016
 GameObject:
   m_ObjectHideFlags: 0

@@ -57,10 +57,27 @@ public class PlayerController : MonoBehaviour
   public GameObject deathCamera;
   public GameObject UICamera;
 
+  [FMODUnity.EventRef]
+  public string shootEvent = "";
+
+  [FMODUnity.EventRef]
+  public string raiseUndeadEvent = "";
+
+  [FMODUnity.EventRef]
+  public string dieEvent = "";
+
+  [FMODUnity.EventRef]
+  public string teleportEvent = "";
+
+  [FMODUnity.EventRef]
+  public string noManaEvent = "";
+  
+  [FMODUnity.EventRef]
+  public string TakeDamageEvent = "";
 
 
-  // Start is called before the first frame update
-  void Start()
+    // Start is called before the first frame update
+    void Start()
   {
     rb =  GetComponent<Rigidbody>();        
     timeSinceManaTick = 0f;
@@ -196,7 +213,12 @@ public class PlayerController : MonoBehaviour
       Vector3 shootDirection =  projectileDestination.position - projectileSource.position;
       GameObject go = Instantiate(projectilePrefab, projectileSource.position, Quaternion.identity);
       go.GetComponent<ProjectileBehavior>().Init(shootDirection);
+      FMODUnity.RuntimeManager.PlayOneShot(shootEvent, transform.position);
     }  
+    else
+    {
+      FMODUnity.RuntimeManager.PlayOneShot(noManaEvent, transform.position);
+    }
   }
 
   void RaiseUndead()
@@ -217,15 +239,22 @@ public class PlayerController : MonoBehaviour
             Destroy(col.gameObject);            
             // print("RISE FROM YOUR GRAVE");
             currentMana -= raiseUndeadManaCost;
+            FMODUnity.RuntimeManager.PlayOneShot(raiseUndeadEvent, transform.position);
             break;
           }
       }
+    }
+    else
+    {
+      FMODUnity.RuntimeManager.PlayOneShot(noManaEvent, transform.position);
     }
   }
 
   public void TakeDamage(float f)
   {
     currentHealth -= f;
+
+    FMODUnity.RuntimeManager.PlayOneShot(TakeDamageEvent, transform.position);
   }
   public void Die()
   {
@@ -235,6 +264,7 @@ public class PlayerController : MonoBehaviour
         Destroy(z.gameObject);
     }
     movementVector = Vector3.zero;
+    FMODUnity.RuntimeManager.PlayOneShot(dieEvent, transform.position);
 
     deathCamera.SetActive(true);
     UICamera.SetActive(false);
@@ -243,6 +273,7 @@ public class PlayerController : MonoBehaviour
 
   public void Teleport()
   {
+    FMODUnity.RuntimeManager.PlayOneShot(teleportEvent, transform.position);
     foreach (GameObject z in zombies)
     {
       z.transform.position = transform.position;

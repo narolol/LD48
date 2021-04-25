@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GoldBehavior : MonoBehaviour
 {
+  [FMODUnity.EventRef]
+  public string goldEvent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +23,7 @@ public class GoldBehavior : MonoBehaviour
     {
       if (other.gameObject.tag == "Player")  
       {
+        FMODUnity.RuntimeManager.PlayOneShot(goldEvent, transform.position);
         other.GetComponent<PlayerController>().goldAmount += 1;
         Destroy(this.gameObject);
       }

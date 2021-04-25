@@ -929,3 +929,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d31d52a5f62bf74c855a64c31aba344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goldEvent: event:/gold

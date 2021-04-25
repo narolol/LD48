@@ -9,11 +9,11 @@ public class GenericTileBehavior : MonoBehaviour
   public float HP;
   public GameObject lootPrefab;
   public int lootMultiplier;
-   
 
+  [FMODUnity.EventRef]  
+  public string breakEvent;
 
-
-  void Update() 
+    void Update() 
   {
       
   }
@@ -35,6 +35,7 @@ public class GenericTileBehavior : MonoBehaviour
     
     if (lootPrefab != null)
     {  
+      FMODUnity.RuntimeManager.PlayOneShot(breakEvent, transform.position);
       for (int i = 0; i < lootMultiplier; i++)
       {
         GameObject _loot = Instantiate(lootPrefab, transform.position, Quaternion.identity);

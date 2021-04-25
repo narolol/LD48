@@ -109,7 +109,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2258136781063407753}
   serializedVersion: 8
-  lengthInSec: 10
+  lengthInSec: 5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -935,7 +935,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30
+      scalar: 12
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -5003,7 +5003,7 @@ TrailRenderer:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    numCornerVertices: 6
+    numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
     textureMode: 1
