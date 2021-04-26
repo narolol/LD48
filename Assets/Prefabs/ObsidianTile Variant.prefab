@@ -333,7 +333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8702498738399975056, guid: c81100d1bb3db3140bacb1ed37929e5e, type: 3}
       propertyPath: HP
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8702498738399975056, guid: c81100d1bb3db3140bacb1ed37929e5e, type: 3}
       propertyPath: lootMultiplier
@@ -385,7 +385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8702498738399975059, guid: c81100d1bb3db3140bacb1ed37929e5e, type: 3}
       propertyPath: m_Name
-      value: ObsidianTile
+      value: ObsidianTile Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8702498738452850292, guid: c81100d1bb3db3140bacb1ed37929e5e, type: 3}
       propertyPath: m_Mesh

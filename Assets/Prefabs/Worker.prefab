@@ -53,7 +53,8 @@ MonoBehaviour:
   stepMultiplier: 13.5
   maxSpeed: 1.5
   damage: 1
-  atkSpd: 2
+  atkSpd: 1
+  turnCooldown: 0
   state: 0
 --- !u!54 &2035167248
 Rigidbody:

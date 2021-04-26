@@ -38,14 +38,14 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ProjectileBehavior.cs" />
      <Compile Include="Assets\Scripts\GoldBehavior.cs" />
+     <Compile Include="Assets\Scenes\TutorialTime.cs" />
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+     <Compile Include="Assets\Scripts\GroundDamageController.cs" />
+     <Compile Include="Assets\Scripts\DigDown.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Scripts\GenericTileBehavior.cs" />
      <Compile Include="Assets\Scripts\WorkerBehavior.cs" />
-     <Compile Include="Assets\Scripts\DigDown.cs" />
-     <Compile Include="Assets\Scripts\GroundDamageController.cs" />
-     <Compile Include="Assets\Scenes\TutorialTime.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

@@ -2974,11 +2974,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3476561452583274691, guid: 58c1b7761edcb0845917100c3d93b57a, type: 3}
       propertyPath: HP
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3476561452583274691, guid: 58c1b7761edcb0845917100c3d93b57a, type: 3}
       propertyPath: lootMultiplier
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3476561452604799012, guid: 58c1b7761edcb0845917100c3d93b57a, type: 3}
       propertyPath: m_Materials.Array.data[0]

@@ -75,7 +75,7 @@ void FixedUpdate()
             break;
 
             case WorkerState.Attacking:
-                //
+               
                 timeSinceAtk += Time.deltaTime;
 
                 if (timeSinceAtk >= atkSpd)

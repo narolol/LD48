@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -75,6 +76,9 @@ public class PlayerController : MonoBehaviour
   [FMODUnity.EventRef]
   public string TakeDamageEvent = "";
 
+  [FMODUnity.EventRef]
+  public string bgmEvent ="";
+
 
     // Start is called before the first frame update
     void Start()
@@ -85,6 +89,8 @@ public class PlayerController : MonoBehaviour
     canControl = true; 
     _timeSinceLastJump = jumpCooldown;
     canRefreshJump = true;
+
+    FMODUnity.RuntimeManager.PlayOneShot(bgmEvent);
 
   }
 
@@ -126,6 +132,13 @@ public class PlayerController : MonoBehaviour
       if (Input.GetMouseButtonDown(1))
       {
         RaiseUndead();
+      }
+    }
+    else
+    {
+      if(Input.GetKeyDown(KeyCode.R))
+      {
+        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
       }
     }
   }

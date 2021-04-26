@@ -10,6 +10,9 @@ public class GenericTileBehavior : MonoBehaviour
   public GameObject lootPrefab;
   public int lootMultiplier;
 
+
+  [FMODUnity.EventRef]
+  public string takeDamageEvent;
   [FMODUnity.EventRef]  
   public string breakEvent;
 
@@ -20,6 +23,8 @@ public class GenericTileBehavior : MonoBehaviour
   public void TakeDamage(float d) 
   {
     HP -= d;
+    GetComponent<Animator>().Play("BlockTakeDamage");
+    FMODUnity.RuntimeManager.PlayOneShot(takeDamageEvent, transform.position);
 
     if (HP <= 0f)
     {           

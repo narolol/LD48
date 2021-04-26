@@ -45,7 +45,30 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 100
-  Length: 1120
+  Length: 720
+--- !u!114 &-2544032436354165196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/bgm
+  m_EditorClassIdentifier: 
+  Path: event:/bgm
+  guid: 43ea130362ad044f8ba5ff343ba60e42
+  Banks:
+  - {fileID: 4589225512865892342}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 48000
 --- !u!114 &-1304569571022617939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,11 +84,11 @@ MonoBehaviour:
   Path: FMOD Poject/LD48/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637549791993416698
+  lastModified: 637549846645385040
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1078
+    Value: 1164
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -92,12 +115,14 @@ MonoBehaviour:
   - {fileID: 3332746310120784355}
   - {fileID: 7307181032663205499}
   - {fileID: 7499866996151531803}
+  - {fileID: 3968914620638897922}
+  - {fileID: -2544032436354165196}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4589225512865892342}
   StringsBanks:
   - {fileID: -1304569571022617939}
-  stringsBankWriteTime: 637549791993416698
+  stringsBankWriteTime: 637549846645385040
   cacheVersion: 6
 --- !u!114 &3332746310120784355
 MonoBehaviour:
@@ -122,6 +147,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 100
   Length: 192
+--- !u!114 &3968914620638897922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/blockDamage
+  m_EditorClassIdentifier: 
+  Path: event:/blockDamage
+  guid: 8615bc3b889c534bb1128b211f010953
+  Banks:
+  - {fileID: 4589225512865892342}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 100
+  Length: 457
 --- !u!114 &4589225512865892342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,7 +185,7 @@ MonoBehaviour:
   Path: FMOD Poject/LD48/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637549791993386768
+  lastModified: 637549846645345146
   LoadResult: 0
   FileSizes: []
   Exists: 1

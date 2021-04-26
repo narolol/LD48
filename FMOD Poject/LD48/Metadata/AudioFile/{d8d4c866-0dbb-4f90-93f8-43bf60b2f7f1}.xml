@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{d8d4c866-0dbb-4f90-93f8-43bf60b2f7f1}">
+		<property name="assetPath">
+			<value>BLOCK-DMG-1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.45770833333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7df14870-9cdb-47de-a8e1-2559b2db0d35}</destination>
+		</relationship>
+	</object>
+</objects>
