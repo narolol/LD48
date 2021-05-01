@@ -204,7 +204,7 @@ MonoBehaviour:
   identifier: 46fbfdf3fc43db0458918377fd40293e
   parentIdentifier: default
   displaySortOrder: 0
-  active: 0
+  active: 1
   Properties:
     LiveUpdate:
       Value: 0
@@ -248,7 +248,7 @@ MonoBehaviour:
     CallbackHandler:
       Value: {fileID: 0}
       HasValue: 0
-  outputType: 
+  outputType: AUTODETECT
   threadAffinities:
     Value: []
     HasValue: 0

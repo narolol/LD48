@@ -1,0 +1,577 @@
+Using pre-set license
+Built from '2021.1/release' branch; Version is '2021.1.4f1 (4cd64a618c1b) revision 5035594'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19041.928; Version 2004; 64bit' Language: 'en' Physical Memory: 16343 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Software\Unity\2021.1.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Software/Unity/Unity Projects/LD48
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55291
+Successfully changed project path to: D:/Software/Unity/Unity Projects/LD48
+D:/Software/Unity/Unity Projects/LD48
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 151.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.4f1 (4cd64a618c1b)
+[Subsystems] Discovering subsystems at path D:/Software/Unity/2021.1.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Software/Unity/Unity Projects/LD48/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Vendor:   NVIDIA
+    VRAM:     8079 MB
+    Driver:   27.21.14.6079
+Initialize mono
+Mono path[0] = 'D:/Software/Unity/2021.1.4f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Software/Unity/2021.1.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Software/Unity/2021.1.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Software/Unity/2021.1.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Software/Unity/2021.1.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004467 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 111.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.535 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.028896 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+RefreshInfo: StopAssetImportingV2(NoUpdateAssetOptions) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Mono: successfully reloaded assembly
+- Completed reload, in  2.107 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.6 MB.
+System memory in use after: 71.8 MB.
+
+Unloading 211 unused Assets to reduce memory usage. Loaded Objects now: 3981.
+Total: 19.645800 ms (FindLiveObjects: 0.343400 ms CreateObjectMapping: 0.431400 ms MarkObjects: 18.649900 ms  DeleteObjects: 0.220000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/GameScene
+  artifactKey: Guid(75934e9158b424c4d8a739272be772f8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Scenes/GameScene using Guid(75934e9158b424c4d8a739272be772f8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8156a3b8ed4458cf2b919c8d644be39f') in 0.076073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Materials/Cenario/Obsidian_.mat
+  artifactKey: Guid(cfa2ad1d8220e794eb57d3961e5c978c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Obsidian_.mat using Guid(cfa2ad1d8220e794eb57d3961e5c978c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9386dce28ad2e22e256581979e998808') in 0.040786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Materials/Cenario/Bones_.mat
+  artifactKey: Guid(cdbd2750389b53b48838274101aca6b9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Bones_.mat using Guid(cdbd2750389b53b48838274101aca6b9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd7dd021ac36447d1b782488b9d480dc9') in 0.021808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(ba9d2bc7dac039344a7f9d857871263a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Scripts/PlayerController.cs using Guid(ba9d2bc7dac039344a7f9d857871263a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'caff0b8365636129ad781ee629f953e0') in 0.015786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Materials/Cenario/Plane.mat
+  artifactKey: Guid(ad15540e9461c6a4e96b85d5e4205d7e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Plane.mat using Guid(ad15540e9461c6a4e96b85d5e4205d7e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5ac44842a249ee329c8bbe093c2d2e54') in 0.015415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Scenes/GameScene.unity
+  artifactKey: Guid(09ee49cf4fdb20249861dbd416b58cdb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Scenes/GameScene.unity using Guid(09ee49cf4fdb20249861dbd416b58cdb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '491ff31ab4a21db0834bebac3ec766b3') in 0.009168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Scenes/GameScene/LightingData.asset
+  artifactKey: Guid(a0d7e84ed69346a44b59077c8585fbd7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Scenes/GameScene/LightingData.asset using Guid(a0d7e84ed69346a44b59077c8585fbd7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '80150d6886ee8ebd68edcb0e16f22d3a') in 0.016165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Materials/Actors/Player_.mat
+  artifactKey: Guid(bcf204547fcd26842a665bd8e8761d62) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Actors/Player_.mat using Guid(bcf204547fcd26842a665bd8e8761d62) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '589667df63ff0abdb3cbd6f5bb1ac723') in 0.009602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Materials/Cenario/Dirt_.mat
+  artifactKey: Guid(3f1422aac85374b46a868f15c42256c3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Dirt_.mat using Guid(3f1422aac85374b46a868f15c42256c3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c1cb9212ed38f1a330e6a7f8b63bb360') in 0.008644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Materials/Cenario/Down_.mat
+  artifactKey: Guid(3cf291441cec61a4eaf42914f5b4bbc4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Down_.mat using Guid(3cf291441cec61a4eaf42914f5b4bbc4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '50d46355e30157c93de5f375f4789d34') in 0.011693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Materials/Cenario/Gold_.mat
+  artifactKey: Guid(db794a816080f0547b80279432b1a607) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Gold_.mat using Guid(db794a816080f0547b80279432b1a607) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '76581ce83789244a45553ed20b135ac7') in 0.011180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Materials/Cenario/Rock_.mat
+  artifactKey: Guid(d4a5b4553c875ff4d97ac408f543e8c1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Rock_.mat using Guid(d4a5b4553c875ff4d97ac408f543e8c1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '407271dd333735c33c88e6eaf94fefa6') in 0.008909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Materials/Cenario/Ground_.mat
+  artifactKey: Guid(a952dab4933ab5749ac9bdaacd90626c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Ground_.mat using Guid(a952dab4933ab5749ac9bdaacd90626c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '7f95d3f805db82a0700f11d3f917139d') in 0.008072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Materials/Cenario/Ground_Fire.mat
+  artifactKey: Guid(cc5c057db8d7efd4484a162ee54a31fb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Ground_Fire.mat using Guid(cc5c057db8d7efd4484a162ee54a31fb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '87d4f66e520c596c41c7c7a25a09bc7d') in 0.010251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Materials/Cenario/Up_.mat
+  artifactKey: Guid(f53d77d2a574a5948afe8e154ef5f5bc) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Up_.mat using Guid(f53d77d2a574a5948afe8e154ef5f5bc) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ff399303a96fc15d0eba526473a35e41') in 0.008608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Animation/BlockAnimator.controller
+  artifactKey: Guid(a88308d98c5bca548a1165f22b15e97a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Animation/BlockAnimator.controller using Guid(a88308d98c5bca548a1165f22b15e97a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '10eff89508aed37d0554d400ab3563cb') in 0.010042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Materials/EthanBody.mat
+  artifactKey: Guid(0c1d08815917eab4ebfc7cb6f4965cdd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/EthanBody.mat using Guid(0c1d08815917eab4ebfc7cb6f4965cdd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6474aef2c1836db669a4ae80aa7dd697') in 0.008660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Settings/ForwardRenderer.asset
+  artifactKey: Guid(4a8e21d5c33334b11b34a596161b9360) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Settings/ForwardRenderer.asset using Guid(4a8e21d5c33334b11b34a596161b9360) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5b9beeeff2826411a0b2564effa86903') in 0.008754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Materials/Actors/Worker_.mat
+  artifactKey: Guid(311856886f939bb4d9caa97c1dd12341) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Actors/Worker_.mat using Guid(311856886f939bb4d9caa97c1dd12341) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd83cda249e012004e2f666dcfb5da507') in 0.008928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset
+  artifactKey: Guid(f5482a9adc29c404f8f5bae02bcf307d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset using Guid(f5482a9adc29c404f8f5bae02bcf307d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0078d4545a33fb271dc9fd67ce957da3') in 0.068479 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.025213 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+RefreshInfo: StopAssetImportingV2(NoUpdateAssetOptions) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Mono: successfully reloaded assembly
+- Completed reload, in  1.698 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1612 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.5 MB.
+System memory in use after: 112.7 MB.
+
+Unloading 84 unused Assets to reduce memory usage. Loaded Objects now: 3985.
+Total: 20.095700 ms (FindLiveObjects: 0.463800 ms CreateObjectMapping: 0.169700 ms MarkObjects: 19.421600 ms  DeleteObjects: 0.039200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 339.234984 seconds.
+  path: Assets/Materials/Cenario/Obsidian_.mat
+  artifactKey: Guid(cfa2ad1d8220e794eb57d3961e5c978c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Obsidian_.mat using Guid(cfa2ad1d8220e794eb57d3961e5c978c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9ed3e7a134c33c2c9a260609ec886bf2') in 0.052105 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Materials/Cenario/Bones_.mat
+  artifactKey: Guid(cdbd2750389b53b48838274101aca6b9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Bones_.mat using Guid(cdbd2750389b53b48838274101aca6b9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0078e59eba3491ae7da3317e6af91db2') in 0.008511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Materials/Cenario/Plane.mat
+  artifactKey: Guid(ad15540e9461c6a4e96b85d5e4205d7e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Plane.mat using Guid(ad15540e9461c6a4e96b85d5e4205d7e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b93b90031d4f308b801099d9e171ec16') in 0.008602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Scenes/GameScene.unity
+  artifactKey: Guid(09ee49cf4fdb20249861dbd416b58cdb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Scenes/GameScene.unity using Guid(09ee49cf4fdb20249861dbd416b58cdb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '560e853da7a2626931b82fd02ea5eb98') in 0.007627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Materials/Actors/Player_.mat
+  artifactKey: Guid(bcf204547fcd26842a665bd8e8761d62) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Actors/Player_.mat using Guid(bcf204547fcd26842a665bd8e8761d62) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c1bae02c6e885b4ab961d3c5776f2930') in 0.007398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Materials/Cenario/Dirt_.mat
+  artifactKey: Guid(3f1422aac85374b46a868f15c42256c3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Dirt_.mat using Guid(3f1422aac85374b46a868f15c42256c3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '06707c9825634c082fd6d5afc59e1a05') in 0.010520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Materials/Cenario/Down_.mat
+  artifactKey: Guid(3cf291441cec61a4eaf42914f5b4bbc4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Down_.mat using Guid(3cf291441cec61a4eaf42914f5b4bbc4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '7b0df4d86860cbbc8670bc56e8e5d3ef') in 0.011253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Materials/Cenario/Wall_.mat
+  artifactKey: Guid(83bd4531307a94e42861a69769767d6d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Wall_.mat using Guid(83bd4531307a94e42861a69769767d6d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c858838a211969db23421bf11330068a') in 0.025123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Materials/Cenario/Gold_.mat
+  artifactKey: Guid(db794a816080f0547b80279432b1a607) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Gold_.mat using Guid(db794a816080f0547b80279432b1a607) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a2b9f3a2e5e671d8b0f2764b5cbfb10b') in 0.007410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Materials/Cenario/Rock_.mat
+  artifactKey: Guid(d4a5b4553c875ff4d97ac408f543e8c1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Rock_.mat using Guid(d4a5b4553c875ff4d97ac408f543e8c1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f7f29725d5fe54252ef22e8e8ff722a2') in 0.007619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Materials/Cenario/Ground_.mat
+  artifactKey: Guid(a952dab4933ab5749ac9bdaacd90626c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Ground_.mat using Guid(a952dab4933ab5749ac9bdaacd90626c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd003b11211bf43145f3d4d6dee5edc37') in 0.010751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Materials/Cenario/Ground_Fire.mat
+  artifactKey: Guid(cc5c057db8d7efd4484a162ee54a31fb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Ground_Fire.mat using Guid(cc5c057db8d7efd4484a162ee54a31fb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd1d15749734c6e74520e2daefe9896aa') in 0.008288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Materials/Cenario/Up_.mat
+  artifactKey: Guid(f53d77d2a574a5948afe8e154ef5f5bc) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Cenario/Up_.mat using Guid(f53d77d2a574a5948afe8e154ef5f5bc) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8ece70c2fbb5ac62d2a388711fa63c17') in 0.007686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Materials/Actors/Projectile_.mat
+  artifactKey: Guid(a8371fd3c790a96438ba4eb26eb2f95e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Actors/Projectile_.mat using Guid(a8371fd3c790a96438ba4eb26eb2f95e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5759f7b644ad9c3c692edab37c2d4d6a') in 0.009404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Materials/Actors/Worker_.mat
+  artifactKey: Guid(311856886f939bb4d9caa97c1dd12341) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/Actors/Worker_.mat using Guid(311856886f939bb4d9caa97c1dd12341) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a57e91cc2d172b424433145fdfdba9e9') in 0.007167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Materials/BonesLoot.mat
+  artifactKey: Guid(2bc597286d9946044ad890fa410de6c1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Materials/BonesLoot.mat using Guid(2bc597286d9946044ad890fa410de6c1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'fec078be49f189d3771e9afd695ac8f3') in 0.042430 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 34.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 82 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.0 MB.
+System memory in use after: 63.3 MB.
+
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 3985.
+Total: 20.972600 ms (FindLiveObjects: 0.275600 ms CreateObjectMapping: 0.151700 ms MarkObjects: 20.509200 ms  DeleteObjects: 0.034500 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 33.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 82 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.0 MB.
+System memory in use after: 63.3 MB.
+
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 3985.
+Total: 21.594900 ms (FindLiveObjects: 0.250000 ms CreateObjectMapping: 0.126600 ms MarkObjects: 21.180300 ms  DeleteObjects: 0.036600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.023102 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+RefreshInfo: StopAssetImportingV2(NoUpdateAssetOptions) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Mono: successfully reloaded assembly
+- Completed reload, in  1.753 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1612 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.3 MB.
+System memory in use after: 122.6 MB.
+
+Unloading 84 unused Assets to reduce memory usage. Loaded Objects now: 3988.
+Total: 34.543500 ms (FindLiveObjects: 0.293600 ms CreateObjectMapping: 0.158600 ms MarkObjects: 34.043500 ms  DeleteObjects: 0.046300 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 35.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 82 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.8 MB.
+System memory in use after: 73.1 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 3987.
+Total: 20.402700 ms (FindLiveObjects: 0.271200 ms CreateObjectMapping: 0.153000 ms MarkObjects: 19.937400 ms  DeleteObjects: 0.040000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 38799.078706 seconds.
+  path: Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset
+  artifactKey: Guid(f5482a9adc29c404f8f5bae02bcf307d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset using Guid(f5482a9adc29c404f8f5bae02bcf307d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82f98564f73572cb2153188738a47a1a') in 0.060528 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 33.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 82 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.0 MB.
+System memory in use after: 74.2 MB.
+
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 3987.
+Total: 21.445600 ms (FindLiveObjects: 0.273300 ms CreateObjectMapping: 0.152700 ms MarkObjects: 20.956400 ms  DeleteObjects: 0.061200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.023770 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+RefreshInfo: StopAssetImportingV2(NoUpdateAssetOptions) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Mono: successfully reloaded assembly
+- Completed reload, in  2.201 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1612 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.4 MB.
+System memory in use after: 122.6 MB.
+
+Unloading 84 unused Assets to reduce memory usage. Loaded Objects now: 3990.
+Total: 21.623300 ms (FindLiveObjects: 0.265800 ms CreateObjectMapping: 0.150200 ms MarkObjects: 21.163300 ms  DeleteObjects: 0.042600 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 34.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 82 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.9 MB.
+System memory in use after: 73.1 MB.
+
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 3990.
+Total: 23.228200 ms (FindLiveObjects: 0.330800 ms CreateObjectMapping: 0.180900 ms MarkObjects: 22.681700 ms  DeleteObjects: 0.033700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.021482 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+RefreshInfo: StopAssetImportingV2(NoUpdateAssetOptions) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Mono: successfully reloaded assembly
+- Completed reload, in  1.893 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1612 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.6 MB.
+System memory in use after: 112.9 MB.
+
+Unloading 84 unused Assets to reduce memory usage. Loaded Objects now: 3993.
+Total: 20.657300 ms (FindLiveObjects: 0.249600 ms CreateObjectMapping: 0.209500 ms MarkObjects: 20.154100 ms  DeleteObjects: 0.042400 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 34.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 82 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.1 MB.
+System memory in use after: 63.4 MB.
+
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 3993.
+Total: 19.827400 ms (FindLiveObjects: 0.253800 ms CreateObjectMapping: 0.200700 ms MarkObjects: 19.331000 ms  DeleteObjects: 0.040100 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 33.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 82 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.1 MB.
+System memory in use after: 63.4 MB.
+
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 3993.
+Total: 20.898100 ms (FindLiveObjects: 0.256800 ms CreateObjectMapping: 0.149600 ms MarkObjects: 20.450600 ms  DeleteObjects: 0.039400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.022930 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+RefreshInfo: StopAssetImportingV2(NoUpdateAssetOptions) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Mono: successfully reloaded assembly
+- Completed reload, in  2.155 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1612 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.6 MB.
+System memory in use after: 112.9 MB.
+
+Unloading 84 unused Assets to reduce memory usage. Loaded Objects now: 3996.
+Total: 21.283400 ms (FindLiveObjects: 0.259000 ms CreateObjectMapping: 0.153300 ms MarkObjects: 20.823900 ms  DeleteObjects: 0.045900 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 35.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 82 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.1 MB.
+System memory in use after: 63.4 MB.
+
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 3996.
+Total: 20.712900 ms (FindLiveObjects: 0.234000 ms CreateObjectMapping: 0.118800 ms MarkObjects: 20.321900 ms  DeleteObjects: 0.037000 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 33.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 82 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.1 MB.
+System memory in use after: 63.4 MB.
+
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 3996.
+Total: 22.768100 ms (FindLiveObjects: 0.300100 ms CreateObjectMapping: 0.155900 ms MarkObjects: 22.273000 ms  DeleteObjects: 0.038000 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 39.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 82 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.2 MB.
+System memory in use after: 63.4 MB.
+
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 3996.
+Total: 26.779400 ms (FindLiveObjects: 0.270800 ms CreateObjectMapping: 0.151300 ms MarkObjects: 26.316800 ms  DeleteObjects: 0.038500 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 33.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 82 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.2 MB.
+System memory in use after: 63.4 MB.
+
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 3996.
+Total: 22.145800 ms (FindLiveObjects: 0.263300 ms CreateObjectMapping: 0.138700 ms MarkObjects: 21.695100 ms  DeleteObjects: 0.046600 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
